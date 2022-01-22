@@ -199,7 +199,7 @@ body {
     font-size: 18px;
 }
 
-.imagem img:nth-child(2) {
+.imagem img:nth-child(2), .imagem video {
     width: 100%;
 }
 
@@ -237,6 +237,67 @@ body {
 
 .imagem-fim strong {
     font-weight: bold;
+}
+
+.comentarios {
+    font-size: 14px;
+}
+
+.comentario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.comentario div {
+    display: flex;
+    width: 100%;
+}
+
+.comentario h4 {
+    max-width: 30%;
+    overflow: hidden;
+    height: 14px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.comentario p {
+    height: 14px;
+    max-width: 60%;
+    overflow: hidden;
+}
+
+.comentario span {
+    color: rgb(122, 222, 255);
+}
+
+.caixa-comentario {
+    display: flex;
+    border-top: 1px solid #DBDBDB;
+    padding: 1.5%;
+    width: 97%;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caixa-comentario input {
+    width: 75%;
+    font-size: 14px;
+    border: 1px solid #DBDBDB;
+    border-top: none;
+    border-bottom: none;
+}
+
+.caixa-comentario p {
+    font-size: 14px;
+    color: #B2DFFC ;
+}
+
+.caixa-comentario ion-icon {
+    font-size:  18px;
 }
 
 .sujestoes {
@@ -305,13 +366,19 @@ body {
     font-size: 12px;
 }
 
-.sujestao img:hover, .sujestao p:hover, .vertudo p:last-child:hover, .princ img:hover, .princ h1:hover, .sobre p:first-child, .topo ion-icon:hover, .logo:hover, .pesquisar:hover, .stories-img-total:hover, .stories-seta:hover, .imagem-topo img:hover, .imagem-topo p:hover, .imagem-topo ion-icon:hover, .imagem-icons ion-icon:hover, .imagem-fim img:hover, .imagem-fim strong:last-child:hover, .barra-inferior ion-icon, .topo-celular ion-icon, .topo-celular img {
+.sujestao img:hover, .sujestao p:hover, .vertudo p:last-child:hover, .princ img:hover, .princ h1:hover, .sobre p:first-child, .topo ion-icon:hover, .logo:hover, .pesquisar:hover, .stories-img-total:hover, .stories-seta:hover, .imagem-topo img:hover, .imagem-topo p:hover, .imagem-topo ion-icon:hover, .imagem-icons ion-icon:hover, .imagem-fim img:hover, .imagem-fim strong:last-child:hover, .barra-inferior ion-icon, .topo-celular ion-icon, .topo-celular img, .caixa-comentario ion-icon:hover, .comentario span:hover, .comentario ion-icon {
     cursor: pointer;
 }
 
-.sujestao h1:hover, .imagem-fim strong:first-child:hover {
+.sujestao h1:hover, .imagem-fim strong:first-child:hover, .comentario h4:hover {
     cursor: pointer;
     text-decoration: underline;
+}
+
+.caixa-comentario p:hover {
+    color: #0095F6;
+    cursor: pointer;
+    transition: 300ms;
 }
 
 .perfil {
